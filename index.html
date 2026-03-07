@@ -279,12 +279,13 @@ nav.scrolled{
   font-size:.93rem;color:var(--text-body);line-height:1.65;
 }
 .hook-nope-mark{
-  flex-shrink:0;width:22px;height:22px;
-  border:1px solid rgba(239,68,68,.4);
+  flex-shrink:0;width:24px;height:24px;
+  border:1px solid rgba(239,68,68,.35);
   border-radius:50%;
   display:flex;align-items:center;justify-content:center;
-  color:rgba(239,68,68,.75);font-size:.7rem;margin-top:2px;
+  margin-top:2px;
 }
+.hook-nope-mark svg{width:10px;height:10px}
 .hook-reveal{
   background:rgba(29,78,216,0.09);
   border-left:3px solid var(--blue-l);
@@ -346,11 +347,12 @@ nav.scrolled{
 .brain-info{}
 .brain-point{display:flex;gap:18px;align-items:flex-start;margin-bottom:32px}
 .brain-icon{
-  width:38px;height:38px;flex-shrink:0;
+  width:44px;height:44px;flex-shrink:0;
   border:1px solid var(--blue-border);
   display:flex;align-items:center;justify-content:center;
-  font-size:.95rem;background:var(--blue-pale);margin-top:2px;
+  background:var(--blue-pale);margin-top:2px;
 }
+.brain-icon svg{width:22px;height:22px}
 .brain-pt{font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:6px}
 .brain-pd{font-size:.85rem;color:var(--text-body);line-height:1.8;text-wrap:pretty}
 
@@ -534,7 +536,7 @@ nav.scrolled{
 .faq-item.open .faq-ico{background:var(--blue-l);color:#fff;border-color:var(--blue-l);transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
 .faq-ai{padding:0 0 20px;font-size:.9rem;color:var(--text-body);line-height:1.9;text-wrap:pretty}
-.faq-item.open .faq-a{max-height:300px}
+.faq-item.open .faq-a{max-height:600px}
 
 /* ══════════════════════════════════
    FINAL CTA
@@ -642,7 +644,7 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
   background:linear-gradient(135deg,var(--blue-l),var(--indigo));
   color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.2em;
   text-transform:uppercase;text-decoration:none;font-family:'Raleway',sans-serif;
-  cursor:pointer;border:none;transition:all .3s;
+  cursor:pointer;border:none;transition:all .3s;box-sizing:border-box;
 }
 .m-cta:hover{box-shadow:0 12px 36px rgba(59,130,246,.35)}
 
@@ -745,15 +747,15 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
       <h3 class="hook-q no-orphan">Аффирмации не работают.<br><em>И это не ваша вина</em></h3>
       <div class="hook-nope">
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>Вы повторяете «я богатый, я успешный» — но внутри звучит другой голос, и вы ему верите больше</span>
         </div>
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>Медитации помогают расслабиться — но не переписывают убеждения, которые сидят на уровне нейронов</span>
         </div>
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>Курсы по мышлению дают знания — но знание и новый нейронный маршрут это совершенно разные вещи</span>
         </div>
       </div>
@@ -771,11 +773,11 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
       <h3 class="hook-q no-orphan">Ваш мозг меняется.<br><em>Вопрос — на что именно</em></h3>
       <div class="hook-nope">
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>Каждую ночь, засыпая с теми же мыслями, вы укрепляете старые нейронные маршруты</span>
         </div>
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>Гиппокамп консолидирует всё, что было в вашей голове последние часы перед сном — хорошее и плохое</span>
         </div>
       </div>
@@ -793,15 +795,15 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
       <h3 class="hook-q no-orphan">Почему одни техники работают,<br><em>а другие нет</em></h3>
       <div class="hook-nope">
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>«Определённые Гц» без точных значений — это не метод, это маркетинг</span>
         </div>
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>Поток аффирмаций без фазовой архитектуры — это как кричать в закрытую дверь</span>
         </div>
         <div class="hook-nope-item">
-          <span class="hook-nope-mark">✕</span>
+          <span class="hook-nope-mark"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="8" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="2" x2="2" y2="8" stroke="rgba(239,68,68,0.75)" stroke-width="1.5" stroke-linecap="round"/></svg></span>
           <span>Чужой голос, читающий чужой текст — мозг не доверяет, подсознание закрывается</span>
         </div>
       </div>
@@ -972,21 +974,52 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
         <p style="font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--blue-ll);margin-bottom:14px;font-weight:600">— Отличие метода —</p>
         <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:32px;text-wrap:balance">Каждая техника — это точный маршрут для вашего мозга</h2>
         <div class="brain-point">
-          <div class="brain-icon">🎯</div>
+          <!-- Target / precision icon -->
+          <div class="brain-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="9" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/>
+              <circle cx="11" cy="11" r="5.5" stroke="#60A5FA" stroke-width="0.9" opacity="0.7"/>
+              <circle cx="11" cy="11" r="2" fill="#60A5FA"/>
+              <line x1="11" y1="1" x2="11" y2="4.5" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/>
+              <line x1="11" y1="17.5" x2="11" y2="21" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/>
+              <line x1="1" y1="11" x2="4.5" y2="11" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/>
+              <line x1="17.5" y1="11" x2="21" y2="11" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div>
             <div class="brain-pt">Точные частоты, а не «определённые Гц»</div>
             <p class="brain-pd">Несущая 200 Гц, тета-смещение 5–6 Гц, дельта 1.5 Гц. Каждый параметр зафиксирован и обоснован.</p>
           </div>
         </div>
         <div class="brain-point">
-          <div class="brain-icon">🌊</div>
+          <!-- 6 phases wave icon -->
+          <div class="brain-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14 C2.5 14 3 9 4.5 9 C6 9 6.5 15 8 15 C9.5 15 10 11 11 11 C12 11 12.5 14 14 14 C15.5 14 16 10 17.5 10 C19 10 19.5 13 21 13" stroke="#06B6D4" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+              <line x1="1" y1="18" x2="21" y2="18" stroke="#3B82F6" stroke-width="0.5" opacity="0.35"/>
+              <circle cx="1" cy="14" r="1.2" fill="#06B6D4" opacity="0.6"/>
+              <circle cx="21" cy="13" r="1.2" fill="#3B82F6" opacity="0.6"/>
+            </svg>
+          </div>
           <div>
             <div class="brain-pt">6 фаз — не просто «аффирмации в наушниках»</div>
             <p class="brain-pd">Присоединение → Индукция → Углубление → Нейропрограммирование → Интеграция → Засыпание.</p>
           </div>
         </div>
         <div class="brain-point">
-          <div class="brain-icon">🔬</div>
+          <!-- Science / DOI reference icon -->
+          <div class="brain-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 2 C7 2 9 5 9 8 C9 11 7 14 7 14" stroke="#6366F1" stroke-width="1.1" stroke-linecap="round"/>
+              <path d="M15 2 C15 2 13 5 13 8 C13 11 15 14 15 14" stroke="#3B82F6" stroke-width="1.1" stroke-linecap="round"/>
+              <line x1="7" y1="5" x2="15" y2="5" stroke="#60A5FA" stroke-width="0.9" stroke-linecap="round"/>
+              <line x1="7" y1="8" x2="15" y2="8" stroke="#60A5FA" stroke-width="0.9" stroke-linecap="round"/>
+              <line x1="7" y1="11" x2="15" y2="11" stroke="#60A5FA" stroke-width="0.9" stroke-linecap="round"/>
+              <line x1="4" y1="17" x2="18" y2="17" stroke="#3B82F6" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+              <line x1="7" y1="17" x2="7" y2="20" stroke="#6366F1" stroke-width="0.9" stroke-linecap="round" opacity="0.5"/>
+              <line x1="15" y1="17" x2="15" y2="20" stroke="#3B82F6" stroke-width="0.9" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
           <div>
             <div class="brain-pt">Авторский голос + реальные DOI</div>
             <p class="brain-pd">Подлинность и доверие вместо чужого голоса. Каждый компонент — с научным источником.</p>
@@ -1103,7 +1136,7 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
             <span class="cmeta-i">21-дневный трекер</span>
           </div>
           <div class="cprice"><span class="cprice-m">₽8 500</span></div>
-          <button class="cbtn">Получить технику</button>
+          <a href="https://payform.ru/4naSFnR/" target="_blank" class="cbtn">Получить технику</a>
         </div>
       </div>
 
@@ -1305,7 +1338,18 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
     <p class="fi" style="font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--blue-ll);margin-bottom:14px;font-weight:600;text-align:center">— Вопросы —</p>
     <h2 class="fi no-orphan" style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;color:var(--text);text-align:center;text-wrap:balance">Часто спрашивают</h2>
     <div class="faq-list fi">
-      <div class="faq-item"><div class="faq-q">Обязательно слушать именно перед сном?<div class="faq-ico">+</div></div><div class="faq-a"><div class="faq-ai">Рекомендуется. В гипнагогии гиппокамп максимально активен, критический фильтр снижен. Можно в состоянии глубокого отдыха днём — но эффект будет ниже.</div></div></div>
+      <div class="faq-item"><div class="faq-q">Почему техники наиболее эффективны перед сном?<div class="faq-ico">+</div></div><div class="faq-a"><div class="faq-ai" style="max-height:none">
+          <p style="margin-bottom:14px">Это не рекомендация для удобства — это следствие того, как устроен мозг. Есть три независимых механизма, которые совпадают именно в момент засыпания:</p>
+
+          <p style="margin-bottom:8px;color:var(--text);font-weight:500;font-size:.88rem">1. Гипнагогия — окно максимальной пластичности</p>
+          <p style="margin-bottom:14px">В переходе между бодрствованием и сном префронтальная кора снижает активность. Именно она отвечает за критическое мышление и фильтрацию новой информации. В этом состоянии суггестивные установки встречают минимальное сопротивление. Это подтверждено на уровне ЭЭГ: тета-ритм (4–8 Гц) в гипнагогии коррелирует с повышенной нейронной пластичностью (Cantero et al., 2003, Neuroscience).</p>
+
+          <p style="margin-bottom:8px;color:var(--text);font-weight:500;font-size:.88rem">2. Ночная консолидация памяти</p>
+          <p style="margin-bottom:14px">Во время NREM-сна гиппокамп «реплицирует» активированные перед сном нейронные следы в долговременную память неокортекса. Это называется системной консолидацией. То, что было активировано последним перед засыпанием, имеет приоритет в этом процессе — феномен, известный как «эффект окончания» (Rasch & Born, 2013, Nature Reviews Neuroscience).</p>
+
+          <p style="margin-bottom:8px;color:var(--text);font-weight:500;font-size:.88rem">3. Бинауральная синхронизация в состоянии покоя</p>
+          <p style="margin-bottom:0">Частотное следование (frequency-following response) — реакция мозга на бинауральные биения — работает эффективнее при низком уровне внешней стимуляции. В горизонтальном положении, в тишине, расслабленное тело снижает кортизол, что само по себе повышает нейронную пластичность (Wahbeh et al., 2007, Alternative Therapies in Health and Medicine).</p>
+        </div></div></div>
       <div class="faq-item"><div class="faq-q">Если я засну во время техники — это нормально?<div class="faq-ico">+</div></div><div class="faq-a"><div class="faq-ai">Нормально и желательно. Мозг продолжает обрабатывать аудиостимулы в лёгком сне. Подсознание работает всю ночь.</div></div></div>
       <div class="faq-item"><div class="faq-q">Нужны ли специальные наушники?<div class="faq-ico">+</div></div><div class="faq-a"><div class="faq-ai">Любые — вкладыши или накладные. Главное: стерео-разделение. Через динамики бинауральный эффект не работает.</div></div></div>
       <div class="faq-item"><div class="faq-q">Когда ждать первых изменений?<div class="faq-ico">+</div></div><div class="faq-a"><div class="faq-ai">Индивидуально. Часть людей замечает изменения во внутреннем монологе уже через 1–2 недели регулярной практики. Устойчивые нейронные паттерны формируются в среднем за несколько месяцев ежедневного применения — это подтверждают исследования по нейропластичности (Lally et al., 2010).</div></div></div>
@@ -1354,22 +1398,22 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
     <p class="m-tag">«Я есть успех на уровне клеток, нейронов, сознания, подсознания и души»</p>
     <p class="m-sec">Что происходит во время техники</p>
     <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✦</span>Дыхание по квадрату 4×4 — вход в тета-состояние</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Счёт от 10 до 1 — углубление в гипнагогию</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Удаление программ самосаботажа, страха начать и достичь</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Активация идентичности успешного человека как внутренней нормы</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Формирование новых нейронных маршрутов через механизм долгосрочного потенцирования</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Синхронизация сознания, тела, мозга в одном направлении</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Дыхание по квадрату 4×4 — вход в тета-состояние</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Счёт от 10 до 1 — углубление в гипнагогию</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Удаление программ самосаботажа, страха начать и достичь</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Активация идентичности успешного человека как внутренней нормы</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Формирование новых нейронных маршрутов через механизм долгосрочного потенцирования</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Синхронизация сознания, тела, мозга в одном направлении</div>
     </div>
     <p class="m-sec">Что входит</p>
     <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✓</span>MP3 · 25:57 · 320 kbps · авторский голос</div>
-      <div class="m-pt"><span class="m-ch">✓</span>PDF-мануал с научными источниками (DOI)</div>
-      <div class="m-pt"><span class="m-ch">✓</span>21-дневный трекер изменений</div>
-      <div class="m-pt"><span class="m-ch">✓</span>Пожизненный доступ · Обновления бесплатно</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>MP3 · 25:57 · 320 kbps · авторский голос</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>PDF-мануал с научными источниками (DOI)</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>21-дневный трекер изменений</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Пожизненный доступ · Обновления бесплатно</div>
     </div>
     <div class="m-price-row"><span class="m-price">₽8 500</span></div>
-    <button class="m-cta">Получить технику «Я есть Успех»</button>
+    <a href="https://payform.ru/4naSFnR/" target="_blank" class="m-cta">Получить технику «Я есть Успех»</a>
   </div>
 </div>
 
@@ -1381,18 +1425,18 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
     <p class="m-tag">«Я — женщина, которая знает себе цену. Я позволяю себе занимать своё место в полную силу»</p>
     <p class="m-sec">Что происходит во время техники</p>
     <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✦</span>Активация глубинной женской силы и внутреннего достоинства</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Удаление программ самоумаления, стыда и «недостаточности»</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Перезапись нейронных маршрутов — от выживания к роскоши присутствия</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Активация уверенности в своей ценности без внешних доказательств</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Синхронизация тела, эмоций и сознания в состояние внутреннего достоинства</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Активация глубинной женской силы и внутреннего достоинства</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Удаление программ самоумаления, стыда и «недостаточности»</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Перезапись нейронных маршрутов — от выживания к роскоши присутствия</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Активация уверенности в своей ценности без внешних доказательств</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2" fill="#60A5FA"/><line x1="7" y1="1" x2="7" y2="4" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="7" y1="10" x2="7" y2="13" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="1" y1="7" x2="4" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="10" y1="7" x2="13" y2="7" stroke="#3B82F6" stroke-width="1" stroke-linecap="round"/><line x1="2.9" y1="2.9" x2="4.9" y2="4.9" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="9.1" y1="9.1" x2="11.1" y2="11.1" stroke="#6366F1" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="11.1" y1="2.9" x2="9.1" y2="4.9" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/><line x1="4.9" y1="9.1" x2="2.9" y2="11.1" stroke="#06B6D4" stroke-width="0.8" stroke-linecap="round" opacity="0.6"/></svg></span>Синхронизация тела, эмоций и сознания в состояние внутреннего достоинства</div>
     </div>
     <p class="m-sec">Что входит</p>
     <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✓</span>MP3 · авторский голос · 320 kbps</div>
-      <div class="m-pt"><span class="m-ch">✓</span>PDF-мануал с научными источниками</div>
-      <div class="m-pt"><span class="m-ch">✓</span>21-дневный трекер изменений</div>
-      <div class="m-pt"><span class="m-ch">✓</span>Пожизненный доступ · Обновления бесплатно</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>MP3 · авторский голос · 320 kbps</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>PDF-мануал с научными источниками</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>21-дневный трекер изменений</div>
+      <div class="m-pt"><span class="m-ch" style="flex-shrink:0;margin-top:3px"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/><polyline points="4,7 6.2,9.5 10.5,4.5" stroke="#60A5FA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Пожизненный доступ · Обновления бесплатно</div>
     </div>
     <div class="m-price-row"><span class="m-price">₽8 500</span></div>
     <button class="m-cta">Получить технику «Пробуждение Королевы»</button>
