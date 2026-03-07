@@ -1023,8 +1023,8 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
     <h2 class="fi no-orphan" style="font-size:clamp(1.8rem,4vw,3rem);font-weight:400;color:var(--text);text-wrap:balance;max-width:580px">Нейропрограммирование мозга</h2>
     <p class="fi" style="font-size:.92rem;color:var(--text-muted);max-width:500px;line-height:1.8;margin-top:14px;text-wrap:pretty">Выберите технику под свой запрос. Каждая — полный протокол с MP3, PDF и трекером.</p>
 
-    <div class="catalog-grid">
-      <!-- 1 -->
+    <div class="catalog-grid" style="grid-template-columns:1fr 1fr;max-width:800px">
+      <!-- 1 — Я ЕСТЬ УСПЕХ -->
       <div class="tcard featured fi" onclick="openM('success')">
         <span class="cbadge new">Новинка 2026</span>
         <div class="ctheme">Самореализация · Успех</div>
@@ -1035,69 +1035,47 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
           <span class="cmeta-i">MP3 + PDF</span>
           <span class="cmeta-i">21-дневный трекер</span>
         </div>
-        <div class="cprice"><span class="cprice-m">₽4 990</span><span class="cprice-o">₽11 111</span></div>
+        <div class="cprice"><span class="cprice-m">₽8 500</span></div>
         <button class="cbtn">Получить технику</button>
       </div>
-      <!-- 2 -->
-      <div class="tcard fi d1" onclick="openM('body')">
-        <span class="cbadge pop">Популярное</span>
+      <!-- 2 — ПРОБУЖДЕНИЕ КОРОЛЕВЫ -->
+      <div class="tcard fi d1" onclick="openM('queen')">
+        <span class="cbadge hot">Новинка 2026</span>
+        <div class="ctheme">Женская сила · Идентичность</div>
+        <div class="ctitle">Пробуждение Королевы</div>
+        <p class="cdesc">Активация глубинной женской силы и внутреннего достоинства. Перезапись программ самоумаления на состояние женщины, которая знает себе цену.</p>
+        <div class="cmeta">
+          <span class="cmeta-i">MP3 + PDF</span>
+          <span class="cmeta-i">21-дневный трекер</span>
+        </div>
+        <div class="cprice"><span class="cprice-m">₽8 500</span></div>
+        <button class="cbtn">Получить технику</button>
+      </div>
+    </div>
+
+    <!-- COMING SOON ROW -->
+    <p class="fi" style="font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blue-ll);margin-top:60px;margin-bottom:24px;font-weight:600;opacity:.7">— Скоро в продаже —</p>
+    <div class="catalog-grid fi" style="grid-template-columns:repeat(3,1fr)">
+      <div class="tcard locked">
+        <span class="cbadge lock">Скоро</span>
         <div class="ctheme">Тело · Регенерация</div>
         <div class="ctitle">Стройность. Молодость. Регенерация</div>
-        <p class="cdesc">Синхронизация тела и сознания. Регенерация на клеточном уровне. Отключение голода от стресса. Активация любви к своему телу.</p>
-        <div class="cmeta">
-          <span class="cmeta-i">~25 мин</span>
-          <span class="cmeta-i">MP3 + PDF</span>
-          <span class="cmeta-i">21-дневный трекер</span>
-        </div>
-        <div class="cprice"><span class="cprice-m">₽4 990</span><span class="cprice-o">₽11 111</span></div>
-        <button class="cbtn">Получить технику</button>
+        <div class="cprice"><span class="cprice-m" style="opacity:.3">₽8 500</span></div>
+        <button class="cbtn ghost" disabled>Скоро в продаже</button>
       </div>
-      <!-- 3 -->
-      <div class="tcard fi d2" onclick="openM('love')">
-        <span class="cbadge hot">В топе</span>
-        <div class="ctheme">Любовь к себе · Принятие</div>
-        <div class="ctitle">Абсолютная любовь к себе</div>
-        <p class="cdesc">Глубинный фрейм: «ты — это любовь». Самоопора, самоценность и освобождение от зависимости внешнего одобрения.</p>
-        <div class="cmeta">
-          <span class="cmeta-i">~25 мин</span>
-          <span class="cmeta-i">MP3 + PDF</span>
-          <span class="cmeta-i">21-дневный трекер</span>
-        </div>
-        <div class="cprice"><span class="cprice-m">₽4 990</span><span class="cprice-o">₽11 111</span></div>
-        <button class="cbtn">Получить технику</button>
-      </div>
-      <!-- 4 locked -->
-      <div class="tcard locked fi">
+      <div class="tcard locked">
         <span class="cbadge lock">Скоро</span>
         <div class="ctheme">Деньги · Изобилие</div>
         <div class="ctitle">Большие деньги в лёгкости</div>
-        <p class="cdesc">Нейроэкономика. Переключение денежного мышления с выживания на созидание. Система вознаграждения.</p>
-        <div class="cmeta"><span class="cmeta-i">~40 мин</span></div>
-        <div class="cprice"><span class="cprice-m" style="opacity:.35">₽4 990</span></div>
+        <div class="cprice"><span class="cprice-m" style="opacity:.3">₽8 500</span></div>
         <button class="cbtn ghost" disabled>Скоро в продаже</button>
       </div>
-      <!-- 5 locked -->
-      <div class="tcard locked fi d1">
+      <div class="tcard locked">
         <span class="cbadge lock">Скоро</span>
-        <div class="ctheme">Сон · Восстановление</div>
-        <div class="ctitle">Глубокий сон и перезагрузка</div>
-        <p class="cdesc">Мелатонин, глимфатическая система, ГАМК. Полное восстановление за ночь и выход с ресурсом.</p>
-        <div class="cmeta"><span class="cmeta-i">~50 мин</span></div>
-        <div class="cprice"><span class="cprice-m" style="opacity:.35">₽4 990</span></div>
+        <div class="ctheme">Любовь к себе · Принятие</div>
+        <div class="ctitle">Абсолютная любовь к себе</div>
+        <div class="cprice"><span class="cprice-m" style="opacity:.3">₽8 500</span></div>
         <button class="cbtn ghost" disabled>Скоро в продаже</button>
-      </div>
-      <!-- 6 pack -->
-      <div class="tcard fi d2" style="background:linear-gradient(135deg,rgba(124,58,237,0.1),var(--card));border-color:rgba(124,58,237,0.22)">
-        <span class="cbadge pack">Выгодно · −33%</span>
-        <div class="ctheme">Все 3 доступные техники</div>
-        <div class="ctitle">Базовая коллекция</div>
-        <p class="cdesc">Успех + Стройность + Любовь к себе. Три направления — комплексная трансформация за 21 день.</p>
-        <div class="cmeta">
-          <span class="cmeta-i">3 MP3 файла</span>
-          <span class="cmeta-i">3 PDF + 3 трекера</span>
-        </div>
-        <div class="cprice"><span class="cprice-m">₽9 990</span><span class="cprice-o">₽14 970</span></div>
-        <button class="cbtn" style="background:linear-gradient(135deg,#6D28D9,#7C3AED)">Получить коллекцию</button>
       </div>
     </div>
   </div>
@@ -1201,7 +1179,7 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
 <div class="modal-bg" id="m-success" onclick="closeOut(event,'m-success')">
   <div class="modal-box">
     <button class="modal-x" onclick="closeM('m-success')">✕</button>
-    <div style="margin-bottom:18px"><span class="cbadge new">Новинка · 07.03.2026</span></div>
+    <div style="margin-bottom:18px"><span class="cbadge new">Новинка · 2026</span></div>
     <h2 class="m-title no-orphan">Я есть Успех</h2>
     <p class="m-tag">«Я есть успех на уровне клеток, нейронов, сознания, подсознания и души»</p>
     <p class="m-sec">Что происходит во время техники</p>
@@ -1220,57 +1198,34 @@ footer{background:#02040A;padding:44px 0;border-top:1px solid var(--border)}
       <div class="m-pt"><span class="m-ch">✓</span>21-дневный трекер изменений</div>
       <div class="m-pt"><span class="m-ch">✓</span>Пожизненный доступ · Обновления бесплатно</div>
     </div>
-    <div class="m-price-row"><span class="m-price">₽4 990</span><span class="m-old">₽11 111</span></div>
+    <div class="m-price-row"><span class="m-price">₽8 500</span></div>
     <button class="m-cta">Получить технику «Я есть Успех»</button>
   </div>
 </div>
 
-<div class="modal-bg" id="m-body" onclick="closeOut(event,'m-body')">
+<div class="modal-bg" id="m-queen" onclick="closeOut(event,'m-queen')">
   <div class="modal-box">
-    <button class="modal-x" onclick="closeM('m-body')">✕</button>
-    <div style="margin-bottom:18px"><span class="cbadge pop">Популярное</span></div>
-    <h2 class="m-title no-orphan">Стройность. Молодость. Регенерация</h2>
-    <p class="m-tag">«Каждая клеточка перестраивается под параметры абсолютного здоровья»</p>
+    <button class="modal-x" onclick="closeM('m-queen')">✕</button>
+    <div style="margin-bottom:18px"><span class="cbadge hot">Новинка · 2026</span></div>
+    <h2 class="m-title no-orphan">Пробуждение Королевы</h2>
+    <p class="m-tag">«Я — женщина, которая знает себе цену. Я позволяю себе занимать своё место в полную силу»</p>
     <p class="m-sec">Что происходит во время техники</p>
     <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✦</span>Body scan — прогрессивная релаксация тела</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Отключение голода от реакции стресса и выживания</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Запуск регенерации ЖКТ, лимфо-, гормональной систем</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Синхронизация тела, сознания, мозга и души</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Активация любви к своему телу и внешности</div>
+      <div class="m-pt"><span class="m-ch">✦</span>Активация глубинной женской силы и внутреннего достоинства</div>
+      <div class="m-pt"><span class="m-ch">✦</span>Удаление программ самоумаления, стыда и «недостаточности»</div>
+      <div class="m-pt"><span class="m-ch">✦</span>Перезапись нейронных маршрутов — от выживания к роскоши присутствия</div>
+      <div class="m-pt"><span class="m-ch">✦</span>Активация уверенности в своей ценности без внешних доказательств</div>
+      <div class="m-pt"><span class="m-ch">✦</span>Синхронизация женского тела, энергии и сознания в единое состояние Королевы</div>
     </div>
     <p class="m-sec">Что входит</p>
     <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✓</span>MP3 · ~25 мин · 320 kbps · авторский голос</div>
+      <div class="m-pt"><span class="m-ch">✓</span>MP3 · авторский голос · 320 kbps</div>
       <div class="m-pt"><span class="m-ch">✓</span>PDF-мануал с научными источниками</div>
       <div class="m-pt"><span class="m-ch">✓</span>21-дневный трекер изменений</div>
+      <div class="m-pt"><span class="m-ch">✓</span>Пожизненный доступ · Обновления бесплатно</div>
     </div>
-    <div class="m-price-row"><span class="m-price">₽4 990</span><span class="m-old">₽11 111</span></div>
-    <button class="m-cta">Получить технику «Стройность»</button>
-  </div>
-</div>
-
-<div class="modal-bg" id="m-love" onclick="closeOut(event,'m-love')">
-  <div class="modal-box">
-    <button class="modal-x" onclick="closeM('m-love')">✕</button>
-    <div style="margin-bottom:18px"><span class="cbadge hot">В топе</span></div>
-    <h2 class="m-title no-orphan">Абсолютная любовь к себе</h2>
-    <p class="m-tag">«Я — это любовь. Всё и ничто одновременно, стремящееся к большему»</p>
-    <p class="m-sec">Что происходит во время техники</p>
-    <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✦</span>Глубинный фрейм: «я = любовь» — основа самопринятия</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Практика заботы о себе как главной работе жизни</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Активация самоопоры, самоценности и внутренней силы</div>
-      <div class="m-pt"><span class="m-ch">✦</span>Снятие зависимости от внешнего подтверждения</div>
-    </div>
-    <p class="m-sec">Что входит</p>
-    <div class="m-pts">
-      <div class="m-pt"><span class="m-ch">✓</span>MP3 · ~25 мин · 320 kbps · авторский голос</div>
-      <div class="m-pt"><span class="m-ch">✓</span>PDF-мануал с научными источниками</div>
-      <div class="m-pt"><span class="m-ch">✓</span>21-дневный трекер изменений</div>
-    </div>
-    <div class="m-price-row"><span class="m-price">₽4 990</span><span class="m-old">₽11 111</span></div>
-    <button class="m-cta">Получить «Абсолютную любовь к себе»</button>
+    <div class="m-price-row"><span class="m-price">₽8 500</span></div>
+    <button class="m-cta">Получить технику «Пробуждение Королевы»</button>
   </div>
 </div>
 
